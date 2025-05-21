@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vote Meilleur 11</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Élisez votre Meilleur 11 - Saison 2024/25</h1>
+    <form id="voteForm">
+      <input type="text" name="prenom" placeholder="Prénom" required />
+      <input type="text" name="nom" placeholder="Nom" required />
+      <input type="email" name="email" placeholder="Email" required />
+
+      <h2>Gardien</h2>
+      <select name="gardien" required></select>
+
+      <h2>Défenseurs (4)</h2>
+      <select name="def1" required></select>
+      <select name="def2" required></select>
+      <select name="def3" required></select>
+      <select name="def4" required></select>
+
+      <h2>Milieux (3)</h2>
+      <select name="mil1" required></select>
+      <select name="mil2" required></select>
+      <select name="mil3" required></select>
+
+      <h2>Attaquants (3)</h2>
+      <select name="att1" required></select>
+      <select name="att2" required></select>
+      <select name="att3" required></select>
+
+      <button type="submit">Valider mon 11</button>
+    </form>
+    <p id="statusMsg"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
